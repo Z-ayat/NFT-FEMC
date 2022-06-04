@@ -1,0 +1,182 @@
+    /* Start Global Rules  */
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Outfit';
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        background-color: var(--Main-BG);
+        font-size: 18px;
+    }
+    
+    a {
+        color: var(--Disc-ID);
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: var(--Price-Clr);
+    }
+    /* End Global Rules  */
+    /* Start Variables */
+    
+     :root {
+        --Main-BG: hsl(217, 54%, 11%);
+        --Shadow-BG: hsl(215, 55%, 9%);
+        --Card-BG: hsl(216, 50%, 16%);
+        --Disc-ID: hsl(0, 0%, 100%);
+        --Price-Clr: hsl(178, 100%, 50%);
+        --Timer-Clr: hsl(215, 51%, 70%);
+        --line-Clr: hsl(215, 32%, 27%);
+        --Footer-Clr: hsl(228, 45%, 44%);
+        --Weight_1: 300;
+        --Weight_2: 400;
+        --Weight_3: 600;
+        --Border-Radius: 1rem;
+    }
+    /* End Variables */
+    /* DK */
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    .container {
+        padding: 1.3rem;
+        background-color: var(--Card-BG);
+        display: flex;
+        flex-direction: column;
+        border-radius: var(--Border-Radius);
+        width: 350px;
+        gap: 1.6rem;
+        height: 596px;
+        box-shadow: 0px 6px 6px 9px hsla(215.1, 50.6%, 15.9%, 0.31);
+    }
+    
+    .NFT {
+        width: 100%;
+        border-radius: var(--Border-Radius);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .DiscID h3 {
+        cursor: pointer;
+        font-size: 1.16rem;
+        font-weight: var(--Weight_3);
+        color: var(--Disc-ID);
+        margin-bottom: 1rem;
+    }
+    
+    .DiscID h3:hover {
+        color: var(--Price-Clr);
+    }
+    
+    .DiscID p {
+        font-size: 1rem;
+        color: var(--Timer-Clr);
+        opacity: 100;
+    }
+    
+    .offer {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1.61rem;
+        justify-content: space-between;
+    }
+    
+    .price {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .price p {
+        color: var(--Price-Clr);
+    }
+    
+    .price,
+    .timer {
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .ruler {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: var(--line-Clr);
+        margin-top: 1.3rem;
+        margin-bottom: 1.3rem;
+    }
+    
+    .footer {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .footer img {
+        width: 15%;
+        border: 1px solid var(--Disc-ID);
+        border-radius: 100%;
+    }
+    
+    .imageholder {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .imageholder:hover .blue-hover {
+        overflow: hidden;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 98.5%;
+        display: flex;
+        float: left;
+        top: 0;
+        border-radius: var(--Border-Radius);
+        background-color: rgba(0, 255, 247, 0.5)
+    }
+    
+    .imageholder:hover .blue-hover::before {
+        position: absolute;
+        content: "";
+        background-image: url(images/icon-view.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+    /* DK */
+    /* Footer */
+    
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    .attribution a {
+        color: var(--Footer-Clr);
+    }
+    /* Footer */
